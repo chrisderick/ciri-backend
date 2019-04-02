@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+
+/*********** Barra de rolagem ***********/
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    -webkit-border-radius: 16px;
+}
+  
+::-webkit-scrollbar-track-piece {
+    background-color: #bcd1e342;   
+}
+  
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color:#bcd1e3;
+    -webkit-border-radius: 3px;
+}
+  
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #bcd1e3;
+    -webkit-border-radius: 3px;
+}
+
+/*****************************************/
+
+/*********** Style da navbar ************/
+.barra{
+    background-color: #000;
+    margin-top:-7px;
+}
+
+.logo-nav{
+    margin-left:15px;
+}
+
+.hamburgue{
+    font-size: 22px;
+    color:#fff;
+}
+
+.link {
+    color:#fff;
+    text-decoration: none;
+}
+
+.link:hover{
+    color:#bcd1e3;
+    transition: .5s;
+}
+
+/*****************************************/
+
+/*********** Style Banner ***************/
+
+.seta{
+    color:#bcd1e3;
+}
+
+/*****************************************/
+
+/********** Style do Painel *************/
+
+.painel{
+    background-color: #7ed1e3;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.texto-painel{
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 16pt;
+    color:#fff;
+}
+
+.centro{
+    text-align: center;
+}
+/*****************************************/
+
+/********* carousel mult-item ***********/
+
+@media (min-width: 768px) {
+
+.carouselPrograms .carousel-inner .active,
+.carouselPrograms .carousel-inner .active + .carousel-item,
+.carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+}
+
+.carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+}
+
+.carouselPrograms .carousel-inner .carousel-item-next,
+.carouselPrograms .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+}
+
+.carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+.carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+.carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+.carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+.carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+}
+
+.carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+}
+
+.carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+.carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+.carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+.carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+}
+}
+
+/*****************************************/
+
+/************ Style do card *************/
+
+.parag-card{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15pt;
+    color: #fff;
+}
+
+.menu-card{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.detalhes-card{
+    text-align: left;
+}
+
+.butao{
+    color:#fff;
+    border-color: #bcd1e3;
+    background-color: #bcd1e3c9;
+}
+
+.butao:hover{
+    background-color: #bcd1e3;
+    color:#fff;
+}
+
+/*****************************************/
+
+/*********** Style do rodape ************/
+
+.rodape{
+    background-color:#000;
+    margin-top: 30px;
+}
+
+.roda-cont{
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.icone{
+    color:#bcd1e3;
+    font-size: 16pt;
+    margin-top: 6px;
+}
+
+.icone:hover{
+    color:#fff;
+}
+
+.foot-info{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    color: #fff;
+    font-size: 11pt;
+}
+
+/*****************************************/
+
+/*********** Style do modals ************/
+
+.Text-Modal{
+    font-family: 'Roboto', sans-serif;   
+    font-size: 11pt;
+}
+
+/*****************************************/

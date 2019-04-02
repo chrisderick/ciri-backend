@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>RCI Empregos</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Colocar o icone da aba do navegador -->
+    <link rel="icon" href="img/icon.png" type="image/vnd.microsoft.icon">
+    <!-- Pagina de CSS-->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <!-- Fonte Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  </head>
+  <body>
+    
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg barra">
+        <!-- Lembrar de trocar a extensão do arquivo -->
+        <a class="navbar-brand" href="index.html"><img class="logo-nav" src="./img/logo-nav.png"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-bars hamburgue"></i></span>
+        </button>
+        <!-- Links alinhado a direita -->
+        <!-- Back-End linka -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link link" href="#">VAGAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#">EMPRESAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#Modal-login" data-toggle="modal" data-target="#Modal-login">LOGIN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim NavBar -->
+
+    <!-- Banner em carousel -->
+    <!-- Fazer imagens de quem somos, como participar, todos linkados a um faq
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./img/1baner.svg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/2baner.svg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./img/3baner.svg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span aria-hidden="true"><i class="fas fa-2x fa-chevron-left seta"></i></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span aria-hidden="true"><i class="fas fa-2x fa-chevron-right seta"></i></span>
+        <span class="sr-only">Proximo</span>
+      </a>
+    </div>
+     Fim Carousel -->
+
+    <!-- Empresas Parceiras -->
+    <section class="col-12">
+      <div class="container painel">
+        <p class="texto-painel">EMPRESAS PARCEIRAS</p>
+      </div>
+
+      <!-- Somente img 200x200px -->
+      <div class="container-fluid">
+        <div id="carouselExample" class="carouselPrograms carousel slide carempresa" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                
+                <div class="carousel-item col-md-4  active">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <a href="#" title="image 1" class="thumb">
+                          <img class="img-fluid mx-auto d-block" src="./img/logo1.png" alt="slide 1">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item col-md-4 ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <a href="#" title="image 3" class="thumb">
+                          <img class="img-fluid mx-auto d-block" src="./img/logo2.png" alt="slide 2">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item col-md-4 ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <a href="#" title="image 4" class="thumb">
+                          <img class="img-fluid mx-auto d-block" src="./img/logo3.png" alt="slide 3">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item col-md-4 ">
+                    <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <a href="#" title="image 5" class="thumb">
+                          <img class="img-fluid mx-auto d-block" src="./img/logo4.png" alt="slide 4">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-md-4 ">
+                  <div class="panel panel-default">
+                      <div class="panel-thumbnail">
+                        <a href="#" title="image 6" class="thumb">
+                          <img class="img-fluid mx-auto d-block" src="./img/logo5.png" alt="slide 5">
+                        </a>
+                      </div>
+                    </div>
+                </div>                                           
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-2x fa-chevron-left seta"></i></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-2x fa-chevron-right seta"></i></span>
+              <span class="sr-only">Proximo</span>
+            </a>
+        </div>
+      </div>     
+    </section>  
+    <!--Fim empresas-->
+
+    <!--Ultimas vagas-->
+    <section class="col-12" style="margin-top: 60px;">
+      <div class="container painel">
+        <p class="texto-painel">ULTIMAS VAGAS</p>
+      </div>
+
+      <div class="container" style="margin-top: 40px;">
+        <div class="card-deck mx-auto">
+          
+          <!-- Cards -->
+          <div class="card mb-3" style="max-width: 20rem;">
+            <div class="card-header" style="background-color: #bcd1e3">
+              <p class="parag-card">Vaga 0000</p>
+            </div>
+            <div class="card-body">
+              <span class="menu-card">Empresa:</span> 
+              <span class="detalhes-card">VASP<br/><br/></span>
+              <span class="menu-card">Remuneração:</span>
+              <span class="detalhes-card">R$: 3.000.000<br/><br/></span>
+              <span class="menu-card">Descrição:</span>
+              <span class="detalhes-card">Fazer nada, coça o saco e ser muito mais muito escravizado, em um abient... <a href="#">Ver mais</a><br/></span>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 20rem;">
+            <div class="card-header" style="background-color: #bcd1e3">
+              <p class="parag-card">Vaga 0001</p>
+            </div>
+            <div class="card-body">
+              <span class="menu-card">Empresa:</span> 
+              <span class="detalhes-card">To desempregado<br/><br/></span>
+              <span class="menu-card">Remuneração:</span>
+              <span class="detalhes-card">R$: 9.000.000<br/><br/></span>
+              <span class="menu-card">Descrição:</span>
+              <span class="detalhes-card">Fazer nada, coça o saco e ser muito mais muito escravizado, em um abient... <a href="#">Ver mais</a><br/></span>
+            </div>
+          </div>
+
+          <div class="card mb-3" style="max-width: 20rem;">
+            <div class="card-header" style="background-color: #bcd1e3">
+              <p class="parag-card">Vaga 0002</p>
+            </div>
+            <div class="card-body">
+              <span class="menu-card">Empresa:</span> 
+              <span class="detalhes-card">Fedex<br/><br/></span>
+              <span class="menu-card">Remuneração:</span>
+              <span class="detalhes-card">R$: 13.000.000<br/><br/></span>
+              <span class="menu-card">Descrição:</span>
+              <span class="detalhes-card">Fazer nada, coça o saco e ser muito mais muito escravizado, em um abient... <a href="#">Ver mais</a><br/></span>
+            </div>
+          </div>
+          <!-- Fim dos cards -->     
+          
+        </div>
+      </div>
+
+      <!-- Botão -->
+      <div class="d-flex justify-content-around">
+        <div class="p-2"></div>
+        <div class="p-2"></div>
+        <a href="#" class="btn butao"><b>VER VAGAS</b></a>
+      </div>
+    </section>
+    <!--Fim Vagas-->
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <div class="container roda-cont">
+        <div class="d-flex justify-content-around">
+          <div class="d-flex flex-column">
+            <div class="p-2">
+              <a href="https://www.facebook.com/rciemprego" target="_blank"><i class="fab fa-facebook icone"></i></a><span class="foot-info"> /RCIemprego</span>
+            </div>
+            <div class="p-2">
+              <a href="https://twitter.com/rciemprego" target="_blank"><i class="fab fa-twitter-square icone"></i></a><span class="foot-info"> /RCIemprego</span>
+            </div>
+            <div class="p-2">
+              <a href="https://www.linkedin.com/rciemprego" target="_blank"><i class="fab fa-linkedin icone"></i></a><span class="foot-info"> /RCIemprego</span>
+            </div>
+          </div>
+
+          <div class="p-2"></div>
+
+          <div class="d-flex flex-column">
+            <div class="p-2">
+              <i class="fas fa-at icone"></i><span class="foot-info"> - RCI@empregos.bsb</span>
+            </div>
+            <div class="p-2">
+              <i class="fas fa-map-marked-alt icone"></i><span class="foot-info"> - SHCS Q 704/904 - Asa Sul, Brasília, DF, 70390-045</span>
+            </div>
+            <div class="p-2">
+              <i class="fas fa-phone icone"></i><span class="foot-info"> - (0xx11) 4002-8922</span>
+            </div>
+          </div>
+        </div>
+    </div>
+    </footer>
+    <!-- Fim Rodapé-->
+
+    <!-- Modal de login -->
+    <div class="modal fade" id="Modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-auto">
+            <div class="container">
+              <!-- Botões do colapse da modal -->
+              <a class="btn butao" data-toggle="collapse" href="#collapse-candidato" role="button" aria-expanded="false" aria-controls="collapse-candidato" id="botao-candidato">
+                <b>CANDIDATO</b>
+              </a>
+              <a class="btn butao" data-toggle="collapse" href="#collapse-empresa" role="button" aria-expanded="false" aria-controls="collapse-empresa" id="botao-empresa">
+                <b>EMPRESA</b>
+              </a>
+            </div>
+            <br/>
+
+            <!-- Conteudo da colapse de candidato -->
+            <div class="collapse" id="collapse-candidato">
+              <div clas="mx-auto">
+                  <form>
+                    <div class="form-group">
+                      <label for="CPF_login">CPF:</label>
+                      <input type="text" class="form-control" id="CPF_login" name="CPF_login">
+                    </div>
+                    <div class="form-group">
+                      <label for="Senha_Candidato">Senha:</label>
+                      <input type="password" class="form-control" id="Senha_Candidatologin" name="Senha_Candidatologin">
+                    </div>
+                    <div class="form-group">
+                      <a href="#">Esqueci Minha Senha</a>
+                    </div>
+                    <div class="centro">
+                      <button type="submit" class="btn btn-primary">ENTRAR</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+
+            <!-- Collapse Empresa Login -->
+            <div class="collapse" id="collapse-empresa">
+              <div clas="mx-auto">
+                  <form>
+                    <div class="form-group">
+                      <label for="CNJP_login">CNPJ:</label>
+                      <input type="text" class="form-control" id="CNPJ_login" name="CNPJ_login">
+                    </div>
+                    <div class="form-group">
+                      <label for="Senha_Empresa">Senha:</label>
+                      <input type="password" class="form-control" id="Senha_Empresalogin" name="Senha_Empresalogin">
+                    </div>
+                    <div class="form-group">
+                      <a href="#">Esqueci Minha Senha</a>
+                    </div>
+                    <div class="centro">
+                      <button type="submit" class="btn btn-primary">ENTRAR</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <p class="Text-Modal">Não possui cadastro? <a href="#Modal-Registro" data-toggle="modal" data-target="#Modal-Registro">Registre-se</a></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Modal de Login -->
+
+    <!-- Modal de Registro -->
+    <div class="modal fade" id="Modal-Registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Novo Registro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body mx-auto">
+            <div class="container">
+              <!-- Botões do colapse da modal -->
+              <a class="btn butao" data-toggle="collapse" href="#collapse-registro-candidato" role="button" aria-expanded="false" aria-controls="collapse-registro-candidato" id="botao-registro-candidato">
+                <b>CANDIDATO</b>
+              </a>
+              <a class="btn butao" data-toggle="collapse" href="#collapse-registro-empresa" role="button" aria-expanded="false" aria-controls="collapse-registro-empresa" id="botao-registro-empresa">
+                <b>EMPRESA</b>
+              </a>
+            </div>
+            <br/>
+
+            <!-- Conteudo da colapse de candidato registro -->
+            <div class="collapse" id="collapse-registro-candidato">
+              <div clas="mx-auto">
+                  <form>
+                    <div class="form-group">
+                      <label for="Nome_Candidato">Nome Completo:</label>
+                      <input type="text" class="form-control" id="Nome_Candidato" name="Nome_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="CPF_Candidato">CPF:</label>
+                      <input type="text" class="form-control" id="CPF_Candidato" name="CPF_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Cidade_Candidato">Cidade:</label>
+                      <select id="Cidade_Candidato" class="form-control">
+                        <option selected>Escolha</option>
+                        <option>Águas Claras</option>
+                        <option>Brazlândia</option>
+                        <option>Candangolândia</option>
+                        <option>Ceilândia</option>
+                        <option>Cruzeiro</option>
+                        <option>Entorno</option>
+                        <option>Estrutural</option>
+                        <option>Fercal</option>
+                        <option>Gama</option>
+                        <option>Guará</option>
+                        <option>Itapoã</option>
+                        <option>Jardim Botânico</option>
+                        <option>Lago Norte</option>
+                        <option>Lago Sul</option>
+                        <option>Núcleo Bandeirante</option>
+                        <option>Paranoá</option>
+                        <option>Park Way</option>
+                        <option>Planaltina</option>
+                        <option>Plano Piloto</option>
+                        <option>Recanto das Emas</option>
+                        <option>Riacho Fundo</option>
+                        <option>Riacho Fundo II</option>
+                        <option>Samambaia</option>
+                        <option>Santa Maria</option>
+                        <option>São Sebastião</option>
+                        <option>SIA</option>
+                        <option>Sobradinho</option>
+                        <option>Sobradinho II</option>
+                        <option>Sudoeste/Octogonal</option>
+                        <option>Taguatinga</option>
+                        <option>Varjão</option>
+                        <option>Vicente Pires</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="DataNasc_Candidato">Data de Nascimento:</label>
+                      <input type="date" class="form-control" id="DataNasc_Candidato" name="DataNasc_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Email_Candidato">Email:</label>
+                      <input type="email" class="form-control" id="Email_Candidato" name="Email_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Senha_Candidato">Senha:</label>
+                      <input type="password" class="form-control" id="Senha_Candidato" name="Senha_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Senha_CandidatoConf">Confirma Senha:</label>
+                      <input type="password" class="form-control" id="Senha_CandidatoConf" name="Senha_CandidatoConf" required>
+                    </div>
+                    <div class="form-group">
+                      <!--JS de senha fortificada-->
+                    </div>
+                    <div class="centro">
+                      <button type="submit" class="btn btn-primary">CADASTRAR</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+
+            <!-- Collapse Empresa Registro -->
+            <div class="collapse" id="collapse-registro-empresa">
+              <div clas="mx-auto">
+                  <form>
+                    <div class="form-group">
+                      <label for="Razao_Empresa">Razão Social:</label>
+                      <input type="text" class="form-control" id="Razao_Empresa" name="Razao_Empresa" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="CNPJ_Empresa">CNPJ:</label>
+                      <input type="text" class="form-control" id="CNPJ_Empresa" name="CNPJ_Empresa" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="CEP_Empresa">CEP:</label>
+                      <input type="text" class="form-control" id="CEP_Empresa" name="CEP_Empresa" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Endereco_Empresa">Endereço:</label>
+                      <input type="text" class="form-control" id="Endereco_Empresa" name="Endereco_Empresa" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Complemento_Empresa">Complemento:</label>
+                      <input type="text" class="form-control" id="Complemento_Empresa" name="Complemento_Empresa" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Cidade_Empresa">Cidade:</label>
+                      <input type="text" class="form-control" id="Cidade_Empresa" name="Cidade_Empresa" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Email_Candidato">Email:</label>
+                      <input type="email" class="form-control" id="Email_Candidato" name="Email_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Senha_Candidato">Senha:</label>
+                      <input type="password" class="form-control" id="Senha_Candidato" name="Senha_Candidato" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Senha_CandidatoConf">Confirma Senha:</label>
+                      <input type="password" class="form-control" id="Senha_CandidatoConf" name="Senha_CandidatoConf" required>
+                    </div>
+                    <div class="form-group">
+                      <!--JS de senha fortificada-->
+                    </div>
+                    <br/>
+                    <div class="centro">
+                      <button type="submit" class="btn btn-primary">CADASTRAR</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do modal de registro -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/carrosel.js"></script>
+    <script type="text/javascript" src="js/collapse.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js"></script>
+    <script type="text/javascript" src="js/cpfecnpj.js"></script>
+    <script type="text/javascript" src="js/mask.js"></script>
+  </body>
+</html>
