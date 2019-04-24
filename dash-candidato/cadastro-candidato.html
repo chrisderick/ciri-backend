@@ -1,65 +1,139 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <title>RCI Empregos</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Colocar o icone da aba do navegador -->
-    <link rel="icon" href="../img/icon.png" type="vnd.microsoft.icon">
-    <!-- Pagina de CSS-->
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
-    <!-- Fonte Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  </head>
-  <body>
-    
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg barra">
-        <!-- Lembrar de trocar a extensão do arquivo -->
-        <a class="navbar-brand" href="index.html"><img class="logo-nav" src="../img/logo-nav.png"/></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span><i class="fas fa-bars hamburgue"></i></span>
-        </button>
-        <!-- Links alinhado a direita -->
-        <!-- Back-End linka -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        #NomeCandidato
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><!--ICONE APARECERAR/DESAPARECER EM CASO DE NOVAS NOTIFICAÇÕES--><i class="far fa-bell"></i> NOTIFICAÇÕES</a>
-                        <a class="dropdown-item" href="#">PERFIL</a>
-                        <a class="dropdown-item" href="#">GERENCIAR CANDIDATURA</a>
-                        <a class="dropdown-item" href="#">AJUDA</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="fas fa-power-off sairicon"></i> SAIR</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="#">VAGAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link" href="#">EMPRESAS</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Fim NavBar -->
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/carrosel.js"></script>
-    <script type="text/javascript" src="js/collapse.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js"></script>
-    <script type="text/javascript" src="js/cpfecnpj.js"></script>
-    <script type="text/javascript" src="js/mask.js"></script>
-  </body>
+<head>
+  <title>RCI Empregos</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Colocar o icone da aba do navegador -->
+  <link rel="icon" href="../img/icon.png" type="vnd.microsoft.icon">
+  <!-- Pagina de CSS-->
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css" />
+  <!-- Fonte Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg barra">
+    <!-- Lembrar de trocar a extensão do arquivo -->
+    <a class="navbar-brand" href="index.html"><img class="logo-nav" src="../img/logo-nav.png" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars hamburgue"></i></span>
+    </button>
+    <!-- Links alinhado a direita -->
+    <!-- Back-End linka -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            #NomeCandidato
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+              <!--ICONE APARECERAR/DESAPARECER EM CASO DE NOVAS NOTIFICAÇÕES--><i class="far fa-bell"></i>
+              NOTIFICAÇÕES</a>
+            <a class="dropdown-item" href="#">PERFIL</a>
+            <a class="dropdown-item" href="#">GERENCIAR CANDIDATURA</a>
+            <a class="dropdown-item" href="#">AJUDA</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fas fa-power-off sairicon"></i> SAIR</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="#">VAGAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link" href="#">EMPRESAS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Fim NavBar -->
+
+  <!-- Formulario de cadastro -->
+  <form>
+    <div class="form-group">
+      <label for="Nome_Candidato">Nome Completo:</label>
+      <input type="text" class="form-control" id="Nome_Candidato" name="Nome_Candidato" readonly required>
+    </div>
+    <div class="form-group">
+      <label for="CPF_Candidato">CPF:</label>
+      <input type="text" class="form-control" id="CPF_READ" name="CPF_Candidato" readonly required>
+    </div>
+    <div class="form-group">
+      <label for="Cidade_Candidato">Cidade:</label>
+      <select id="Cidade_Candidato" class="form-control">
+        <option selected>Escolha</option>
+        <option>Águas Claras</option>
+        <option>Brazlândia</option>
+        <option>Candangolândia</option>
+        <option>Ceilândia</option>
+        <option>Cruzeiro</option>
+        <option>Entorno</option>
+        <option>Estrutural</option>
+        <option>Fercal</option>
+        <option>Gama</option>
+        <option>Guará</option>
+        <option>Itapoã</option>
+        <option>Jardim Botânico</option>
+        <option>Lago Norte</option>
+        <option>Lago Sul</option>
+        <option>Núcleo Bandeirante</option>
+        <option>Paranoá</option>
+        <option>Park Way</option>
+        <option>Planaltina</option>
+        <option>Plano Piloto</option>
+        <option>Recanto das Emas</option>
+        <option>Riacho Fundo</option>
+        <option>Riacho Fundo II</option>
+        <option>Samambaia</option>
+        <option>Santa Maria</option>
+        <option>São Sebastião</option>
+        <option>SIA</option>
+        <option>Sobradinho</option>
+        <option>Sobradinho II</option>
+        <option>Sudoeste/Octogonal</option>
+        <option>Taguatinga</option>
+        <option>Varjão</option>
+        <option>Vicente Pires</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="DataNasc_Candidato">Data de Nascimento:</label>
+      <input type="date" class="form-control" id="DataNasc_Candidato" name="DataNasc_Candidato" required>
+    </div>
+    <div class="form-group">
+      <label for="Email_Candidato">Email:</label>
+      <input type="email" class="form-control" id="Email_Candidato" name="Email_Candidato" readonly required>
+    </div>
+    <div class="centro">
+      <button type="submit" class="btn btn-primary">CADASTRAR</button>
+    </div>
+  </form>
+  <!-- Fim Formulario-->
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../js/carrosel.js"></script>
+  <script type="text/javascript" src="../js/collapse.js"></script>
+  <script type="text/javascript" src="../js/jquery.maskedinput-1.1.4.pack.js"></script>
+  <script type="text/javascript" src="../js/cpfecnpj.js"></script>
+  <script type="text/javascript" src="../js/mask.js"></script>
+</body>
+
 </html>
