@@ -1,0 +1,31 @@
+Candidato:
+[RN001] Não podem existir cadastros com email duplicado;
+[RN002] Não podem existir CPFs inválidos na base de dados;
+[RN003] Não podem existir cadastros com CPF duplicado;
+[RN004] Um candidato não pode deletar sua conta caso esteja inscrito em alguma vaga;
+
+Empresa:
+[RN001]
+[RN005] Não podem existir CNPJs inválidos na base de dados;
+[RN006] Não podem existir cadastros com CPF duplicado;
+[RN007] Uma empresa pode anunciar inúmeras vagas;
+
+Vagas:
+
+[RN008] Toda vaga está sobre responsabilidade de uma empresa;
+[RN009] Uma vaga pode receber várias candidaturas;
+[RN010] Um candidato não pode fazer múltiplas inscrições em uma mesma vaga;
+[RN011] Ao confirmar a contratação, o anúncio de vagas será deletado;
+[RN012] Ao ocorrer alguma alteração na vaga, todos os candidatos serão notificados;
+[RN013] As vagas poderão ter um prazo limite;
+[RN014] A empresa pode encerrar o anúncio da vaga a qualquer momento;
+[RN015] O candidato ao confirmar uma contratação será notificado para encerrar sua candidatura nas demais vagas cadastradas.
+
+Candidaturas:
+
+[RN004], [RN009], [RN010], [RN015]
+
+Login:
+
+[RN016] O usuário deve logar no sistema utilizando o seu CPF e senha;
+[RN017] Caso exista uma sessão de login ativa, a tela de login desaparecerá da página inicial;
